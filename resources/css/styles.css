@@ -1,0 +1,322 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    /* background-color: #fff; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* background: linear-gradient(to right, #e2e2e2 40px, #f8f8f8 50%, #e8e8e8 10%, #293f50 ); */
+    background: linear-gradient(to right, #24313c, #4c8db0, #4a7285, #4c8db0, #24313c);
+    
+}
+
+header .logo img {
+    height: 70px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #69c9e7;
+}
+
+header .btn-contato {
+    background-color: #4a7285;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+header .btn-contato:hover {
+    background-color: #24313c;
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/logo\ grande.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero .btn-hero {
+    background-color: #4a7285;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-hero:hover {
+    background-color: #24313c;
+}
+
+/* Seção Serviços */
+.servicos {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.servicos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.servico {
+    background-color: #4a7285;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.servico:hover {
+    transform: translateY(-10px);
+    background-color: #24313c;
+    color: #fff;
+}
+
+.servico h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.servico p {
+    font-size: 1rem;    
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.sobre img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Seção Parceiros */
+.parceiros {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.parceiros h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.parceiros-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.parceiros-container img {
+    height: 100px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.parceiros-container img:hover {
+    opacity: 1;
+}
+
+/* Seção Contato */
+.contato {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato form input,
+.contato form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contato form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contato form button {
+    background-color: #4a7285;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato form button:hover {
+    background-color: #24313c;
+}
+
+/* Rodapé */
+footer {
+    background-color: #24313c;
+    color: #fff;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo-footer img {
+    height: 40px;
+}
+
+footer .links-uteis ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+footer .links-uteis ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer .links-uteis ul li a:hover {
+    color: #69c9e7;
+}
+
+footer .redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+footer .redes-sociais img {
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+footer .redes-sociais img:hover {
+    opacity: 1;
+}
+
+footer .direitos-autorais {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos do Slider */
+.slider-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider-inner {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+.slider-item {
+    min-width: 100%;
+    height: 400px; /* Ajuste conforme necessário */
+    object-fit: cover;
+}
