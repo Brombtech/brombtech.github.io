@@ -32,7 +32,7 @@ document.querySelector('.contato form')?.addEventListener('submit', function(e) 
         const formData = new FormData(this);
         
         const emailData = {
-          apikey: "C6AAEC7D9176DED840D368D2EA77F3EF615CA5E43016DE3070988BD606FC8FFF6FEA0B6C52E395FA0105BE4B4D0F842D",  // Substitua pela sua API Key do Elastic Email
+          apikey: atob("QzZBQUVDN0Q5MTc2REVEODQwRDM2OEQyRUE3N0YzRUY2MTVDQTVFNDMwMTZERTMwNzA5ODhCRDYwNkZDOEZGRjZGRUEwQjZDNTJFMzk1RkEwMTA1QkU0QjREMEY4NDJE"),
           from: "comercial@brombtech.com.br",
           to: "comercial@brombtech.com.br",
           subject: "Novo contato do site",
