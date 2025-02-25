@@ -320,3 +320,136 @@ footer .direitos-autorais {
     height: 400px; /* Ajuste conforme necessário */
     object-fit: cover;
 }
+
+/* Ajustes para responsividade */
+
+/* Imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 5%;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 80px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    /* Serviços */
+    .servicos-container {
+        flex-direction: column;
+    }
+
+    .servico {
+        width: 100%;
+    }
+
+    /* Sobre */
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre img {
+        width: 100%;
+    }
+
+    /* Slider */
+    .slider-item {
+        height: 300px;
+    }
+
+    /* Parceiros */
+    .parceiros-container {
+        flex-wrap: wrap;
+    }
+
+    /* Contato */
+    .contato form {
+        width: 90%;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    footer .links-uteis ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header */
+    header .logo img {
+        height: 50px;
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    header .btn-contato {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Serviços/Sobre títulos */
+    .servicos h2,
+    .sobre h2,
+    .parceiros h2,
+    .contato h2 {
+        font-size: 2rem;
+    }
+
+    /* Parceiros */
+    .parceiros-container img {
+        height: 70px;
+    }
+
+    /* Formulário */
+    .contato form input,
+    .contato form textarea {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ajuste para tablets em modo paisagem */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .servicos-container {
+        flex-wrap: wrap;
+    }
+
+    .servico {
+        width: 45%;
+    }
+}
